@@ -1,10 +1,11 @@
 //  merge sort algorithm both iterative and recursive
 
+using System;
+
 int[] arr = { 12, 11, 13, 5, 6, 7 };
 
 MergeSortRecursive(arr, 0, arr.Length - 1);
 
-Console.ReadLine();
 
 foreach (var i in arr)
 {
@@ -23,6 +24,8 @@ void MergeSortRecursive(int[] arr, int left, int right)
     MergeSortRecursive(arr, mid + 1, right);
 
     Merge(arr, left, right, mid);
+
+
 
 }
 
